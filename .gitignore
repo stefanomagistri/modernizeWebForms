@@ -229,3 +229,5 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
+/ModernizeWebForms2015/bower_components
+/.vs
