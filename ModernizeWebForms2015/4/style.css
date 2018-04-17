@@ -5,7 +5,8 @@
 }
 
 h2 {
-	text-decoration: underline;
+    text-decoration: underline;
+    font-size: 42px;
 }
 
 form, footer {

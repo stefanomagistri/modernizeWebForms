@@ -7,20 +7,20 @@ using System.Web.UI.WebControls;
 
 namespace ModernizeWebForms2015._4
 {
-  public partial class Default : System.Web.UI.Page
-  {
-
-    Models.TripRepository _Repo = new Models.TripRepository();
-
-    protected void Page_Load(object sender, EventArgs e)
+    public partial class Default : System.Web.UI.Page
     {
 
+        Models.TripRepository _Repo = new Models.TripRepository();
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void grid_CallingDataMethods(object sender, CallingDataMethodsEventArgs e)
+        {
+            e.DataMethodsObject = _Repo;
+        }
+
     }
-
-		protected void grid_CallingDataMethods(object sender, CallingDataMethodsEventArgs e)
-		{
-			e.DataMethodsObject = _Repo;
-		}
-
-	}
 }
